@@ -3,9 +3,9 @@
     <div id="error_explanation">
       <h2><%= pluralize(comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
 
-      <ul>
+      <ul  class="list-group">
       <% comment.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <li class="list-group-item list-group-item-warning"><%= message %></li>
       <% end %>
       </ul>
     </div>
